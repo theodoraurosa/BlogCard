@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+:root {
+    --color-primary-1: #fff9ea;
+    --color-primary-2: #ffe8b4;
+    --color-primary-3: #f8d477;
+    --color-primary-4: #ffe100;
+    --color-primary-5: #ffcb45;
+    --color-primary-6: #e9a209;
+    --color-primary-7: #f4d04e;
+
+    --color-neutral-0: #fff;
+    --color-neutral-1: #1d1d1d;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+ background-color: var(--color-primary-7);
+ font-family: sans-serif;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100%;
+ margin:5%;
+ 
+}
+
+
+.Card {
+    display: flex;
+    width: 384px;
+    gap: 24px;
+    flex-direction: column;
+    border: 2px solid var(--color-neutral-1);
+    background-color: var(--color-primary-1);
+    border-radius: 20px ;
+    box-shadow: 10px 10px 0px var(--color-neutral-1);
+    padding: 24px;
+    overflow: hidden;
+
+}
+
+.imagen-card img {
+    border-radius: 10px;
+    width: 336;
+    height: 200px;
+    background-color: var(--color-neutral-1);
+}
+
+
+
+
+.category {
+     display: flex;
+     align-items: center;
+     padding: 12px;
+     width: 82px;
+     height: 29px;
+     border-radius: 4px;
+     background-color: #ffcb45;
+}
+
+
+.category span {
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.dateCard {
+   font-size: 13px;
+   padding: 4px;
+   color: var(--color-neutral-1);
+}
+
+.titleCard {
+    font-size: 16px;
+    color: var(--color-primary-7);
+}
+ .textCard {
+    font-size: 15px;
+    padding: 10px;
+ }
+
+ .author {
+      display: flex;
+      align-items: center;
+ }
+
+ .author img {
+    width: 32px;
+    height: 32px;
+ }
+
+ .author_name {
+    font-weight: bold;
+    margin-left: 5.5px
+ }
+ 
+ 

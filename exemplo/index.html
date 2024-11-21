@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="pt-br ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get & display json data</title>
+</head>
+<body>
+    <h1>Users:</h1>
+    <ul>
+    </ul>
+
+    <script>
+        fetch('http://localhost:3000/users')
+        .then(res =>{
+           return res.json();
+        })
+        .then(data =>{
+            data.data.forEach(user => {
+                const markup = `<li>${user.name}</li>`;
+
+                document.querySelector('ul').insertAdjacentHTML('beforeend', markup);
+            });
+        })
+
+        .catch(error => console.log(error));
+    </script>
+</body>
+ </html>
