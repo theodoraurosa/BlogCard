@@ -3,16 +3,16 @@
 
 
 :root {
-    --color-primary-1: #fff9ea;
+    --color-primary-1: #eaf0ff;
     --color-primary-2: #ffe8b4;
     --color-primary-3: #f8d477;
     --color-primary-4: #ffe100;
     --color-primary-5: #ffcb45;
-    --color-primary-6: #e9a209;
-    --color-primary-7: #f4d04e;
+    --color-primary-6: #1a8fd7; /* Azul brilhante, ideal para chamar atenção sem ser muito agressivo */
+    --color-primary-7: #2c598f; /* Azul profundo com toques de verde, perfeito para fundos escuros ou detalhes sofisticados */
 
     --color-neutral-0: #fff;
-    --color-neutral-1: #1d1d1d;
+    --color-neutral-1: #070606;
 }
 
 
@@ -24,7 +24,7 @@
 }
 
 body {
- background-color: var(--color-primary-7);
+ background-color: var(--color-primary-6);
  font-family: sans-serif;
  display: flex;
  justify-content: center;
@@ -41,7 +41,7 @@ body {
     gap: 24px;
     flex-direction: column;
     border: 2px solid var(--color-neutral-1);
-    background-color: var(--color-primary-1);
+ 
     border-radius: 20px ;
     box-shadow: 10px 10px 0px var(--color-neutral-1);
     padding: 24px;
@@ -51,7 +51,7 @@ body {
 
 .imagen-card img {
     border-radius: 10px;
-    width: 336;
+    width: 330px;
     height: 200px;
     background-color: var(--color-neutral-1);
 }
@@ -63,10 +63,10 @@ body {
      display: flex;
      align-items: center;
      padding: 12px;
-     width: 82px;
+     width: 85px;
      height: 29px;
      border-radius: 4px;
-     background-color: #ffcb45;
+     background-color: #d9e0e9;
 }
 
 
@@ -84,16 +84,17 @@ body {
 .dateCard {
    font-size: 13px;
    padding: 4px;
-   color: var(--color-neutral-1);
+   color: var(--color-neutral-0);
 }
 
 .titleCard {
     font-size: 16px;
-    color: var(--color-primary-7);
+    color: var(--color-primary-1);
 }
  .textCard {
-    font-size: 15px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 8px;
+  
  }
 
  .author {
